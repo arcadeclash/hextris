@@ -1,31 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
 
 <title>Hextris : Play Online Puzzle Game</title>
 
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
 <meta name="description" content="Play Hextris online. Rotate the hexagon and survive as long as possible.">
 
 <link rel="icon" href="favicon.ico">
 
+<!-- REQUIRED STYLES -->
 <link rel="stylesheet" href="style/fa/css/font-awesome.min.css">
 <link rel="stylesheet" href="style/style.css">
 
-<style>
-html, body {
-  margin: 0;
-  padding: 0;
-  background: #000;
-  overflow: hidden;
-}
-canvas {
-  display: block;
-  margin: auto;
-}
-</style>
+<!-- REQUIRED FONT (IMPORTANT) -->
+<link href='https://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet'>
 
 </head>
 
@@ -34,42 +25,42 @@ canvas {
 <canvas id="canvas"></canvas>
 
 <div id="overlay" class="faded overlay"></div>
-<div id="startBtn"></div>
+<div id='startBtn'></div>
 
-<div id="helpScreen" class="unselectable">
-  <div id="inst_main_body"></div>
+<div id="helpScreen" class='unselectable'>
+  <div id='inst_main_body'></div>
 </div>
 
-<img id="openSideBar" class="helpText" src="./images/btn_help.svg"/>
+<img id="openSideBar" class='helpText' src="./images/btn_help.svg"/>
 
 <img id="pauseBtn" src="./images/btn_pause.svg"/>
-<img id="restartBtn" src="./images/btn_restart.svg"/>
+<img id='restartBtn' src="./images/btn_restart.svg"/>
 
-<div id="HIGHSCORE">HIGH SCORE</div>
+<div id='HIGHSCORE'>HIGH SCORE</div>
 
-<div id="highScoreInGameText">
-  <div id="highScoreInGameTextHeader">HIGH SCORE</div>
-  <div id="currentHighScore">0</div>
+<div id='highScoreInGameText'>
+  <div id='highScoreInGameTextHeader'>HIGH SCORE</div>
+  <div id='currentHighScore'>0</div>
 </div>
 
 <div id="gameoverscreen">
-  <div id="container">
-    <div id="gameOverBox" class="GOTitle">GAME OVER</div>
-    <div id="cScore">0</div>
+  <div id='container'>
+    <div id='gameOverBox' class='GOTitle'>GAME OVER</div>
+    <div id='cScore'>0</div>
 
-    <div id="highScoresTitle" class="GOTitle">HIGH SCORES</div>
+    <div id='highScoresTitle' class='GOTitle'>HIGH SCORES</div>
 
-    <div class="score"><span class="scoreNum">1.</span> <div id="1place">0</div></div>
-    <div class="score"><span class="scoreNum">2.</span> <div id="2place">0</div></div>
-    <div class="score"><span class="scoreNum">3.</span> <div id="3place">0</div></div>
+    <div class='score'><span class='scoreNum'>1.</span> <div id="1place">0</div></div>
+    <div class='score'><span class='scoreNum'>2.</span> <div id="2place">0</div></div>
+    <div class='score'><span class='scoreNum'>3.</span> <div id="3place">0</div></div>
   </div>
 
-  <div id="bottomContainer">
-    <img id="restart" src="./images/btn_restart.svg" height="57px">
+  <div id='bottomContainer'>
+    <img id='restart' src='./images/btn_restart.svg' height='57px'>
   </div>
 </div>
 
-<!-- ✅ LOAD JS HERE (IMPORTANT FIX) -->
+<!-- REQUIRED SCRIPTS (KEEP ORDER) -->
 <script src="vendor/hammer.min.js"></script>
 <script src="vendor/js.cookie.js"></script>
 <script src="vendor/jsonfn.min.js"></script>
