@@ -7,7 +7,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="description" content="Play Hextris online. Rotate the hexagon, match colors, and survive as long as possible in this fast-paced puzzle game.">
+<meta name="description" content="Play Hextris online. Rotate the hexagon and survive as long as possible.">
 
 <link rel="icon" href="favicon.ico">
 
@@ -26,29 +26,6 @@ canvas {
   margin: auto;
 }
 </style>
-
-<!-- Core libraries (REQUIRED) -->
-<script src="vendor/hammer.min.js"></script>
-<script src="vendor/js.cookie.js"></script>
-<script src="vendor/jsonfn.min.js"></script>
-<script src="vendor/keypress.min.js"></script>
-<script src="vendor/jquery.js"></script>
-
-<!-- Game core files (REQUIRED) -->
-<script src="js/save-state.js"></script>
-<script src="js/view.js"></script>
-<script src="js/wavegen.js"></script>
-<script src="js/math.js"></script>
-<script src="js/Block.js"></script>
-<script src="js/Hex.js"></script>
-<script src="js/Text.js"></script>
-<script src="js/comboTimer.js"></script>
-<script src="js/checking.js"></script>
-<script src="js/update.js"></script>
-<script src="js/render.js"></script>
-<script src="js/input.js"></script>
-<script src="js/main.js"></script>
-<script src="js/initialization.js"></script>
 
 </head>
 
@@ -91,6 +68,28 @@ canvas {
     <img id="restart" src="./images/btn_restart.svg" height="57px">
   </div>
 </div>
+
+<!-- ✅ LOAD JS HERE (IMPORTANT FIX) -->
+<script src="vendor/hammer.min.js"></script>
+<script src="vendor/js.cookie.js"></script>
+<script src="vendor/jsonfn.min.js"></script>
+<script src="vendor/keypress.min.js"></script>
+<script src="vendor/jquery.js"></script>
+
+<script src="js/save-state.js"></script>
+<script src="js/view.js"></script>
+<script src="js/wavegen.js"></script>
+<script src="js/math.js"></script>
+<script src="js/Block.js"></script>
+<script src="js/Hex.js"></script>
+<script src="js/Text.js"></script>
+<script src="js/comboTimer.js"></script>
+<script src="js/checking.js"></script>
+<script src="js/update.js"></script>
+<script src="js/render.js"></script>
+<script src="js/input.js"></script>
+<script src="js/main.js"></script>
+<script src="js/initialization.js"></script>
 
 </body>
 </html>
